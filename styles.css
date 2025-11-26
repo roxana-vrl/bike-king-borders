@@ -349,7 +349,56 @@ background: url("assets/colaj-bun.png") center/cover no-repeat;
   filter: invert(16%) sepia(7%) saturate(435%) hue-rotate(20deg) brightness(60%) contrast(95%);
   transform: scale(1.15);
 }
+/* =======================================
+   Hamburger Menu (CSS Only)
+======================================= */
 
+/* ascunde checkbox-ul */
+#menu-toggle {
+  display: none;
+}
+
+/* butonul hamburger */
+.menu-btn {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+  padding: 0.5rem;
+}
+
+/* meniul ascuns */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: white;
+  border-top: 1px solid var(--olive);
+  padding: 1rem;
+}
+
+/* afisare hamburger doar pe mobil */
+@media (max-width: 768px) {
+
+  .desktop {
+    display: none;
+  }
+
+  .menu-btn {
+    display: inline-block;
+  }
+
+  /* când checkbox-ul este BIFAT → afișăm meniul */
+  #menu-toggle:checked + .menu-btn + .mobile-menu {
+    display: flex;
+  }
+
+  .mobile-menu a,
+  .mobile-menu .btn {
+    padding: 0.75rem 0;
+    display: block;
+    font-size: 1rem;
+  }
+}
 
 
 
