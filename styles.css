@@ -55,7 +55,7 @@ h3 {
   line-height: 1.25;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: #737950;
+  color: var(--olive);
 }
 
 h2 {
@@ -186,10 +186,6 @@ p {
   transition: background-color 0.3s ease;
 }
 
-.newsletter-form .btn:hover {
-  background-color: #737950;
-}
-
 /* =============================
    Mobile Menu
 ============================= */
@@ -205,20 +201,12 @@ p {
   display: none;
 }
 
-.banner-full {
-  width: 100%;
-  height: 600px;
-  display: block;
-  margin: 0 auto;
-}
-
 /* =============================
    Hero Section
 ============================= */
 .hero {
   position: relative;
   height: 100vh;
-  min-height: 100%;
   background: url("assets/colaj-bun.png") center/cover no-repeat;
 }
 
@@ -226,7 +214,7 @@ p {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.45);
 }
 
 .hero-inner {
@@ -293,4 +281,210 @@ p {
 
 .price {
   color: var(--olive);
-  font-weig
+  font-weight: 800;
+  margin-top: 0.25rem;
+}
+
+/* =============================
+   Gallery
+============================= */
+.gallery {
+  background: color-mix(in oklab, var(--sky) 10%, white 90%);
+  padding-block: 3rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+/* =============================
+   Details / Tables
+============================= */
+.hours {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.hours dt {
+  color: #666;
+}
+
+.hours dd {
+  font-weight: 700;
+  margin: 0;
+}
+
+/* =============================
+   Modal
+============================= */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 200;
+}
+
+.modal {
+  background: var(--paper);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  max-width: 420px;
+  width: 100%;
+  position: relative;
+  box-shadow: var(--shadow-lg);
+}
+
+.modal h3 {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.modal .close {
+  position: absolute;
+  right: 0.75rem;
+  top: 0.75rem;
+  border: none;
+  background: transparent;
+  font-size: 1.25rem;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.input {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid color-mix(in oklab, var(--olive) 25%, white 75%);
+  border-radius: var(--radius);
+}
+
+.form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.small {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--ink);
+}
+
+/* =============================
+   Footer
+============================= */
+.footer {
+  background: rgba(255, 255, 255, 0.9);
+  color: #2a2a2a;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  border-top: 2px solid var(--olive);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.footer .section {
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.footer .social img {
+  width: 34px;
+  height: 34px;
+  transition: all 0.3s ease;
+}
+
+/* =============================
+   RESPONSIVE: <= 768px
+============================= */
+@media (max-width: 768px) {
+  .desktop { display: none; }
+  .menu-btn { display: inline-block; }
+
+  .mobile {
+    display: block;
+    border-top: 1px solid var(--olive);
+    padding: 0.75rem 0;
+  }
+
+  .mobile a,
+  .mobile .btn {
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.85rem 0;
+    font-size: 1.1rem;
+  }
+
+  .hero {
+    height: 65vh;
+    background-position: center top;
+  }
+
+  .gallery img {
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/* =============================
+   RESPONSIVE: <= 480px
+============================= */
+@media (max-width: 480px) {
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    height: 180px;
+  }
+
+  .footer {
+    padding: 1.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .footer .social img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* =============================
+   RESPONSIVE: <= 360px
+============================= */
+@media (max-width: 360px) {
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.25rem; }
+
+  .hero {
+    height: 75vh;
+  }
+
+  .nav a {
+    font-size: 0.9rem;
+  }
+}
