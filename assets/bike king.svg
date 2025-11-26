@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1366 768">
+  <!-- Generator: Adobe Illustrator 29.8.2, SVG Export Plug-In . SVG Version: 2.1.1 Build 3)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2 {
+        fill: #8bafd4;
+      }
+
+      .st3, .st4 {
+        fill: #fff;
+      }
+
+      .st4, .st1, .st5 {
+        stroke: #737950;
+      }
+
+      .st4, .st1, .st5, .st6 {
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .st5, .st6 {
+        fill: none;
+      }
+
+      .st7 {
+        fill: #333;
+        font-size: 53.21px;
+      }
+
+      .st7, .st2 {
+        font-family: MonotypeCorsiva, 'Monotype Corsiva';
+      }
+
+      .st2 {
+        font-size: 37.65px;
+      }
+
+      .st6 {
+        stroke: #8bafd4;
+      }
+    </style>
+  </defs>
+  <g>
+    <circle class="st3" cx="861.5" cy="280.5" r="100"/>
+    <path class="st0" d="M755.5,280.5c.3,44.3,28.18,84.28,69.79,99.63,41.55,15.33,90.24,1.96,118.14-32.41,28.1-34.62,31.97-84.42,8.48-122.59-23.13-37.58-67.91-56.97-111.16-48.58-49.22,9.55-84.9,54.2-85.25,103.95-.05,7.72,11.95,7.73,12,0,.27-39.15,25.05-75.36,62.23-88.51s79.13-1.53,104.38,28.77,28.16,74.39,8.11,107.94c-20.23,33.85-60.9,52.01-99.61,43.92-43.44-9.07-74.81-47.85-75.11-92.11-.05-7.72-12.05-7.74-12,0Z"/>
+  </g>
+  <line class="st6" x1="860.5" y1="282.5" x2="948.5" y2="238.5"/>
+  <line class="st6" x1="769.5" y1="241.5" x2="860.5" y2="282.5"/>
+  <text class="st7" transform="translate(783.74 247.92) scale(.77 1)"><tspan x="0" y="0">Bike King</tspan></text>
+  <text class="st2" transform="translate(785 342.45) scale(1.4 1)"><tspan x="0" y="0">Borders</tspan></text>
+  <text/>
+  <path class="st1" d="M963.38,437.5"/>
+  <line class="st5" x1="779.5" y1="329.5" x2="860.5" y2="282.5"/>
+  <line class="st5" x1="943.5" y1="327.5" x2="860.5" y2="282.5"/>
+  <polygon class="st4" points="909.39 306.5 900.37 285.72 894.74 298.69 887.2 269.21 877.12 290.03 853.84 250.16 820 306.5 869.63 306.5 888.85 306.5 891.36 306.5 891.36 306.5 909.39 306.5"/>
+  <polygon class="st4" points="852 263.9 831.5 301.5 872.5 301.5 852 263.9"/>
+  <polygon class="st4" points="862.45 277.88 854.87 298.91 868.44 299.41 862.45 277.88"/>
+</svg>
