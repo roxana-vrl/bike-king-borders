@@ -1,6 +1,7 @@
 /* =============================
    Root & Base Styles
 ============================= */
+
 :root {
   --olive: #737950;
   --ink: #2a2a2a;
@@ -18,13 +19,12 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.7;
   scroll-behavior: smooth;
-  font-family: "Open Sans", sans-serif;
   color: var(--ink);
   background-color: #f8f9f8;
 }
@@ -38,6 +38,7 @@ img {
 /* =============================
    Layout Utilities
 ============================= */
+
 .container {
   max-width: 1140px;
   margin-inline: auto;
@@ -48,13 +49,11 @@ img {
   padding-block: 4rem;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   margin: 0 0 0.5rem;
   line-height: 1.25;
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
   color: var(--olive);
 }
 
@@ -64,7 +63,6 @@ h2 {
 
 h3 {
   font-size: 1.125rem;
-  color: var(--olive);
 }
 
 p {
@@ -75,6 +73,7 @@ p {
 /* =============================
    Header / Navigation
 ============================= */
+
 .header {
   position: sticky;
   top: 0;
@@ -97,12 +96,10 @@ p {
   gap: 0.5rem;
   text-decoration: none;
   color: var(--ink);
-  font-weight: 700;
 }
 
 .brand small {
   color: var(--olive);
-  font-size: 0.85rem;
 }
 
 .nav a {
@@ -118,16 +115,17 @@ p {
   color: var(--olive);
 }
 
-/* Button Styles */
+/* Buttons */
+
 .btn {
   display: inline-block;
   border: 1px solid var(--olive);
   background: var(--olive);
-  color: #fff;
+  color: white;
   padding: 0.55rem 1rem;
   border-radius: var(--radius);
   font-weight: 700;
-  text-align: center;
+  cursor: pointer;
   transition: var(--transition);
 }
 
@@ -139,6 +137,7 @@ p {
 /* =============================
    Newsletter
 ============================= */
+
 .newsletter {
   text-align: center;
   margin-top: 2rem;
@@ -147,15 +146,13 @@ p {
 }
 
 .newsletter h3 {
-  font-family: "Montserrat", sans-serif;
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
-  color: #fff;
+  color: white;
 }
 
 .newsletter p {
-  color: #eee;
-  font-size: 1rem;
+  color: #e5e5e5;
   margin-bottom: 1rem;
 }
 
@@ -176,45 +173,50 @@ p {
 }
 
 .newsletter-form .btn {
-  background-color: #737950;
-  color: white;
-  border: none;
   border-radius: 2rem;
   padding: 0.6rem 1.2rem;
-  cursor: pointer;
-  font-weight: 400;
-  transition: background-color 0.3s ease;
+  font-weight: 600;
 }
 
 /* =============================
-   Mobile Menu
+   Mobile Navigation
 ============================= */
-.menu-btn {
-  display: none;
-  background: transparent;
-  cursor: pointer;
-  border: none;
-  padding: 0.25rem;
-}
 
 .mobile {
   display: none;
 }
 
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    border-top: 1px solid var(--olive);
+    padding: 0.75rem 0;
+  }
+  .mobile a,
+  .mobile .btn {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
+
 /* =============================
    Hero Section
 ============================= */
+
 .hero {
   position: relative;
   height: 100vh;
-  background: url("assets/colaj-bun.png") center/cover no-repeat;
+background: url("assets/colaj-bun.png") center/cover no-repeat;
 }
 
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .hero-inner {
@@ -233,15 +235,10 @@ p {
   text-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
-.hero p {
-  color: rgba(255, 255, 255, 0.9);
-  max-width: 760px;
-  margin-inline: auto;
-}
-
 /* =============================
-   Grids & Cards
+   Grid & Cards
 ============================= */
+
 .grid {
   display: grid;
   gap: 1.5rem;
@@ -256,7 +253,7 @@ p {
 }
 
 .card {
-  background: #fff;
+  background: white;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
@@ -288,6 +285,7 @@ p {
 /* =============================
    Gallery
 ============================= */
+
 .gallery {
   background: color-mix(in oklab, var(--sky) 10%, white 90%);
   padding-block: 3rem;
@@ -302,13 +300,13 @@ p {
 }
 
 /* =============================
-   Details / Tables
+   Hours / Tables
 ============================= */
+
 .hours {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
-  font-size: 0.95rem;
 }
 
 .hours dt {
@@ -321,170 +319,42 @@ p {
 }
 
 /* =============================
-   Modal
-============================= */
-.modal-backdrop {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  z-index: 200;
-}
-
-.modal {
-  background: var(--paper);
-  border-radius: var(--radius);
-  padding: 1.5rem;
-  max-width: 420px;
-  width: 100%;
-  position: relative;
-  box-shadow: var(--shadow-lg);
-}
-
-.modal h3 {
-  font-size: 1.25rem;
-  text-align: center;
-  margin-bottom: 0.75rem;
-}
-
-.modal .close {
-  position: absolute;
-  right: 0.75rem;
-  top: 0.75rem;
-  border: none;
-  background: transparent;
-  font-size: 1.25rem;
-  color: var(--ink);
-  cursor: pointer;
-}
-
-.input {
-  width: 100%;
-  padding: 0.65rem 0.75rem;
-  border: 1px solid color-mix(in oklab, var(--olive) 25%, white 75%);
-  border-radius: var(--radius);
-}
-
-.form-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.small {
-  text-align: center;
-  font-size: 0.85rem;
-  color: var(--ink);
-}
-
-/* =============================
    Footer
 ============================= */
+
 .footer {
   background: rgba(255, 255, 255, 0.9);
-  color: #2a2a2a;
+  color: var(--ink);
   text-align: center;
   padding: 2rem 1rem;
-  font-size: 0.9rem;
   border-top: 2px solid var(--olive);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
 }
 
 .footer .social {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.2rem;
-}
-
-.footer .section {
-  margin-top: 1.25rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 1.2rem;
 }
 
 .footer .social img {
   width: 34px;
   height: 34px;
-  transition: all 0.3s ease;
+  transition: var(--transition);
+  filter: invert(43%) sepia(9%) saturate(714%) hue-rotate(33deg) brightness(90%) contrast(86%);
 }
 
-/* =============================
-   RESPONSIVE: <= 768px
-============================= */
-@media (max-width: 768px) {
-  .desktop { display: none; }
-  .menu-btn { display: inline-block; }
-
-  .mobile {
-    display: block;
-    border-top: 1px solid var(--olive);
-    padding: 0.75rem 0;
-  }
-
-  .mobile a,
-  .mobile .btn {
-    display: block;
-    margin: 0.5rem 0;
-    padding: 0.85rem 0;
-    font-size: 1.1rem;
-  }
-
-  .hero {
-    height: 65vh;
-    background-position: center top;
-  }
-
-  .gallery img {
-    height: auto;
-    object-fit: contain;
-  }
+.footer .social img:hover {
+  filter: invert(16%) sepia(7%) saturate(435%) hue-rotate(20deg) brightness(60%) contrast(95%);
+  transform: scale(1.15);
 }
 
-/* =============================
-   RESPONSIVE: <= 480px
-============================= */
-@media (max-width: 480px) {
-  .grid-3,
-  .grid-2 {
-    grid-template-columns: 1fr;
-  }
 
-  .gallery img {
-    height: 180px;
-  }
 
-  .footer {
-    padding: 1.5rem 1rem;
-    font-size: 0.85rem;
-  }
 
-  .footer .social img {
-    width: 28px;
-    height: 28px;
-  }
-}
 
-/* =============================
-   RESPONSIVE: <= 360px
-============================= */
-@media (max-width: 360px) {
-  h1 { font-size: 1.5rem; }
-  h2 { font-size: 1.25rem; }
 
-  .hero {
-    height: 75vh;
-  }
 
-  .nav a {
-    font-size: 0.9rem;
-  }
-}
+
+
