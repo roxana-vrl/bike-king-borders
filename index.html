@@ -5,19 +5,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bike King Borders</title>
-  <meta name="description"
-    content="Bike King Borders — Hire, offers, servicing in Wilderness Forest, Borders, Scotland.">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&display=swap"
-    rel="stylesheet">
+
+  <meta name="description" content="Bike King Borders — Hire, offers, servicing in Wilderness Forest, Borders, Scotland.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="assets/bikeking.png" sizes="any">
 </head>
 
 <body>
-  <!-- HEADER -->
+
+  <!-- ==========================
+       HEADER
+  =========================== -->
   <header class="header">
     <div class="container nav">
+
+      <!-- Branding -->
       <a href="#top" class="brand">
         <img src="assets/logo-final.png" alt="Bike King Borders logo" width="100" height="80">
         <span><small>Wilderness Forest • Scotland</small></span>
@@ -30,57 +34,58 @@
         <a href="#servicing">Servicing</a>
         <a href="#hire">Bike Hire</a>
         <a href="#contact">Contact</a>
-        <button class="btn" id="openSignup">Sign Up</button>
+        <button class="btn">Sign Up</button>
       </nav>
+
+      <!-- MOBILE NAV (CSS ONLY) -->
+      <div class="mobile-wrapper">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">☰</label>
+
+        <nav class="mobile-menu">
+          <a href="#shop">Our Shop</a>
+          <a href="#offers">Offers</a>
+          <a href="#servicing">Servicing</a>
+          <a href="#hire">Bike Hire</a>
+          <a href="#contact">Contact</a>
+          <button class="btn">Sign Up</button>
+        </nav>
+      </div>
+
     </div>
-    <!-- HAMBURGER TOGGLE -->
-<input type="checkbox" id="menu-toggle">
+  </header>
 
-<label for="menu-toggle" class="menu-btn">
-  ☰
-</label>
-
-<nav class="mobile-menu">
-  <a href="#shop">Our Shop</a>
-  <a href="#offers">Offers</a>
-  <a href="#servicing">Servicing</a>
-  <a href="#hire">Bike Hire</a>
-  <a href="#contact">Contact</a>
-  <button class="btn">Sign Up</button>
-</nav>
-
-  <!-- MAIN CONTENT -->
+  <!-- ==========================
+       MAIN CONTENT
+  =========================== -->
   <main id="top">
 
     <!-- HERO -->
     <section class="hero">
       <div class="hero-inner container">
         <div class="hero-content">
+
           <h1>Bike King Borders</h1>
 
-          <!-- Newsletter -->
           <div class="newsletter">
             <h3>Subscribe to our Newsletter</h3>
             <p>Stay updated with our latest offers and biking events!</p>
+
             <form class="newsletter-form" action="#" method="post">
               <input type="email" name="email" placeholder="Enter your email" required>
               <button type="submit" class="btn">Subscribe</button>
             </form>
           </div>
-          <!-- End Newsletter -->
 
         </div>
       </div>
     </section>
 
-    <!-- OUR SHOP -->
+    <!-- SHOP -->
     <section id="shop" class="section">
       <div class="container">
         <h2>Our Shop</h2>
-        <p>We have more than 100 hire bikes available at Bike King Borders, including top end demo models, full
-          suspension trail bikes, hard-tails, kids bikes and tagalongs so we have something for all the family.
-          With brand new bikes in stock from top quality brands like Trek, Orange, Genesis and Santa Cruz and an
-          extensive range of clothing and accessories... </p>
+        <p>We have more than 100 hire bikes available at Bike King Borders...</p>
       </div>
     </section>
 
@@ -88,56 +93,35 @@
     <section id="offers" class="section">
       <div class="container">
         <h2>Special Offers of Bikes</h2>
-        <img src="assets/baner-final.png" alt="Bike offer banner" class="banner-full">
+
+        <img src="assets/baner-final.png" alt="Bike Offers Banner" class="banner-full">
 
         <div class="grid grid-3" style="margin-top:1rem">
-          <!-- CARD 1 -->
+
           <article class="card">
-            <img src="assets/adultbike3.jpg" alt="Cube Bikes Kid 240">
+            <img src="assets/adultbike3.jpg" alt="">
             <div class="pad">
               <h3>Cube Bikes Kid 240</h3>
               <p class="price">£360.00</p>
-              <ul>
-                <li>Lightweight aluminium frame</li>
-                <li>24&quot; Wheels - Ideal for Kids</li>
-                <li>Suntour front suspension</li>
-                <li>7 speed triple transmission</li>
-                <li>Weight: 12.25kg</li>
-              </ul>
             </div>
           </article>
 
-          <!-- CARD 2 -->
           <article class="card">
-            <img src="assets/adultbike1.jpg" alt="Cannondale Synapse Disc Tiagra Road Bike">
+            <img src="assets/adultbike1.jpg" alt="">
             <div class="pad">
-              <h3>Cannondale Synapse Disc Tiagra (2017)</h3>
+              <h3>Cannondale Synapse (2017)</h3>
               <p class="price">£950.00</p>
-              <ul>
-                <li>6069 and 6061 Aluminium frame</li>
-                <li>Lifetime frame and fork warranty</li>
-                <li>Tiagra Drivetrain</li>
-                <li>Lightweight cranks</li>
-                <li>Micro suspension</li>
-              </ul>
             </div>
           </article>
 
-          <!-- CARD 3 -->
           <article class="card">
-            <img src="assets/adultbike5.jpg" alt="Cube Bikes Attain Race Disc">
+            <img src="assets/adultbike5.jpg" alt="">
             <div class="pad">
-              <h3>Cube Bikes Attain Race Disc (2017)</h3>
+              <h3>Cube Attain Race Disc (2017)</h3>
               <p class="price">£1,099.00</p>
-              <ul>
-                <li>Aluminium Superlite Frame</li>
-                <li>Shimano Tiagra drivetrain</li>
-                <li>Integrated cable routing</li>
-                <li>Tapered Head Tube</li>
-                <li>Weight: 9.8kg</li>
-              </ul>
             </div>
           </article>
+
         </div>
       </div>
     </section>
@@ -146,64 +130,46 @@
     <section id="servicing" class="section">
       <div class="container">
         <h2>Bike Servicing</h2>
-        <p>To enhance our servicing, we have improved the choices that our customers can make...</p>
+        <p>We have improved the choices our customers can make...</p>
 
         <div class="grid grid-3" style="margin-top:1rem">
+
           <article class="card">
-            <img src="assets/gear.jpg" alt="Gear service">
+            <img src="assets/gear.jpg" alt="">
             <div class="pad">
               <h3>Gear Service <span class="price">£25</span></h3>
-              <ul>
-                <li>Full bike inspection</li>
-                <li>Cables checked</li>
-                <li>Derailleurs cleaned</li>
-                <li>Gears indexed</li>
-              </ul>
             </div>
           </article>
 
           <article class="card">
-            <img src="assets/fixing-brake-pad-bike_s.avif" alt="Brake service">
+            <img src="assets/fixing-brake-pad-bike_s.avif" alt="">
             <div class="pad">
               <h3>Brake Service <span class="price">£20</span></h3>
-              <ul>
-                <li>Pads checked</li>
-                <li>Rotors straightened</li>
-                <li>Cables replaced or bled</li>
-                <li>Full setup</li>
-              </ul>
             </div>
           </article>
 
           <article class="card">
-            <img src="assets/wheel.jpg" alt="Wheel service">
+            <img src="assets/wheel.jpg" alt="">
             <div class="pad">
               <h3>Wheel Service <span class="price">£25</span></h3>
-              <ul>
-                <li>Bearings greased</li>
-                <li>Alignment adjusted</li>
-                <li>Spokes replaced</li>
-                <li>Wheel rebuild available</li>
-              </ul>
             </div>
           </article>
+
         </div>
       </div>
     </section>
 
-    <!-- BIKE HIRE -->
+    <!-- HIRE -->
     <section id="hire" class="section gallery">
       <div class="container">
         <h2>Bike Hire</h2>
+
         <div class="grid grid-3" style="margin-top:1rem">
-          <div class="card"><div class="pad"><h3>Adult Hardtail MTB</h3><p><strong>4hrs:</strong> £15</p><p><strong>Full Day:</strong> £25</p></div></div>
-          <div class="card"><div class="pad"><h3>Adult Road Bike</h3><p><strong>4hrs:</strong> £12</p><p><strong>Full Day:</strong> £20</p></div></div>
-          <div class="card"><div class="pad"><h3>Junior Hardtail MTB</h3><p><strong>4hrs:</strong> £12</p><p><strong>Full Day:</strong> £20</p></div></div>
+          <div class="card"><div class="pad"><h3>Adult Hardtail MTB</h3><p>4hrs £15 / Full Day £25</p></div></div>
+          <div class="card"><div class="pad"><h3>Adult Road Bike</h3><p>4hrs £12 / Full Day £20</p></div></div>
+          <div class="card"><div class="pad"><h3>Junior MTB</h3><p>4hrs £12 / Full Day £20</p></div></div>
         </div>
 
-        <div style="margin-top:1rem">
-          <p>ID is required to hire our bikes...</p>
-        </div>
       </div>
     </section>
 
@@ -212,12 +178,12 @@
       <div class="container">
         <h2>Riding Moments</h2>
         <div class="grid grid-3" style="margin-top:1rem">
-          <img src="assets/1.jpg" alt="Trail ride">
-          <img src="assets/5.jpg" alt="Forest ride">
-          <img src="assets/3.jpg" alt="Road ride">
-          <img src="assets/6.jpg" alt="Jump">
-          <img src="assets/7.jpg" alt="Borders landscape">
-          <img src="assets/8.jpg" alt="Trail overlook">
+          <img src="assets/1.jpg" alt="">
+          <img src="assets/5.jpg" alt="">
+          <img src="assets/3.jpg" alt="">
+          <img src="assets/6.jpg" alt="">
+          <img src="assets/7.jpg" alt="">
+          <img src="assets/8.jpg" alt="">
         </div>
       </div>
     </section>
@@ -225,12 +191,13 @@
     <!-- CONTACT -->
     <section id="contact" class="section">
       <div class="container grid grid-2">
+
         <div class="card">
           <div class="pad">
             <h2>Contact & Address</h2>
-            <p>Bike King Borders<br>Unit 2, Wilderness Forest<br>Borders, Scotland, EH99 6TT</p>
-            <p><strong>t:</strong> 01999 721 724<br><strong>e:</strong>
-              <a class="link" href="mailto:hello@bikekingborders.co.uk">hello@bikekingborders.co.uk</a></p>
+            <p>Bike King Borders<br>Unit 2, Wilderness Forest<br>Borders, Scotland</p>
+            <p><strong>t:</strong> 01999 721 724<br>
+               <strong>e:</strong> hello@bikekingborders.co.uk</p>
           </div>
         </div>
 
@@ -238,29 +205,27 @@
           <div class="pad">
             <h2>Hours</h2>
             <dl class="hours">
-              <dt>Monday</dt><dd>09:30 – 18:00</dd>
-              <dt>Tuesday</dt><dd>09:30 – 18:00</dd>
-              <dt>Wednesday</dt><dd>09:30 – 18:00</dd>
-              <dt>Thursday</dt><dd>09:30 – 18:00</dd>
-              <dt>Friday</dt><dd>09:30 – 18:00</dd>
-              <dt>Saturday</dt><dd>09:00 – 18:00</dd>
-              <dt>Sunday</dt><dd>09:00 – 18:00</dd>
+              <dt>Mon–Fri</dt><dd>09:30 – 18:00</dd>
+              <dt>Sat–Sun</dt><dd>09:00 – 18:00</dd>
             </dl>
           </div>
         </div>
+
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
+  <!-- ==========================
+       FOOTER
+  =========================== -->
   <footer class="footer">
     <p>© Bike King Borders. All rights reserved.</p>
     <div class="social">
-      <img src="assets/facebook.svg" alt="Facebook">
-      <img src="assets/instagram.svg" alt="Instagram">
-      <img src="assets/youtube.svg" alt="Youtube">
-      <img src="assets/maps.svg" alt="Google Maps">
+      <img src="assets/facebook.svg" alt="">
+      <img src="assets/instagram.svg" alt="">
+      <img src="assets/youtube.svg" alt="">
+      <img src="assets/maps.svg" alt="">
     </div>
   </footer>
 
