@@ -209,7 +209,7 @@ p {
 .hero {
   position: relative;
   height: 100vh;
-background: url("assets/colaj-bun.png") center/cover no-repeat;
+background: url("assets/colajbun.png") center/cover no-repeat;
 }
 
 .hero::after {
