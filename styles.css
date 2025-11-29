@@ -302,6 +302,22 @@ background: url("assets/colajbun.png") center/cover no-repeat;
 /* =============================
    Hours / Tables
 ============================= */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.contact-form label {
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;
+}
 
 .hours {
   display: grid;
