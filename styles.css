@@ -428,14 +428,9 @@ background: url("assets/colajbun.png") center/cover no-repeat;
 .ta-inline-btn {
   background: var(--olive) !important;   
   color: #737950 !important;                
-  border: none !important;
-  border-radius: 8px;                    
+  border: none !important;                  
   font-weight: 600;
 }
-.ta-inline-btn {
-  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-}
-
 
 
 
