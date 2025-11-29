@@ -408,9 +408,6 @@ background: url("assets/colajbun.png") center/cover no-repeat;
     object-fit: contain;
   }
 }
-
-
-
 .ta-inline-btn {
   background: var(--olive) !important;   
   color: #737950 !important;                
